@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.first-page, .second-page, .third-page{
+    height: 100vh;
+    width: calc(100vw-4px);
+    border: 2px solid red;
+}
+.navbar{
+    height: 8vh;
+    width: 100%;
+    border: 2px solid red;
+}
+.container{
+    height: 92vh;
+    width: 100%;
+    border: 2px solid red;
+}
+.title-task, .title-project{
+    height: 15vh;
+    width: 100%;
+    border: 2px solid red;
+}
+.second-page .goto-main-page{
+    height: 8.5vh;
+    width: 8.5vh;
+    position: relative;
+    top: 72vh;
+    left: 24px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.templates{
+    display: flex;
+}
+.second-page .to-do,.second-page .doing,.second-page .done{
+    height: 70vh;
+    width: 25vw;
+    border: 2px solid red;
+    margin: 35px 25px 25px;
+}
+.third-page-container{
+    display: flex;
+}
+.left-grid{
+    width: 60vw;
+    border: 2px solid red;
+    height: 85vh;
+    display: flex;
+}
+.left-grid .doing, .left-grid .done{
+    height: 70vh;
+    width: 25vw;
+    border: 2px solid red;
+    margin: 35px 15px 25px 22px;
+}
+.right-grid{
+    width: 40vw;
+    height: 85vh;
+    border: 2px solid red;
+}
+.pitch-ideas,.resources{
+    height: 32vh;
+    width: 32vw;
+    margin: 20px;
+    margin-left: 37px;
+    border: 2px solid red;
+}
+.right-grid .goto-main-page{
+    height: 8.5vh;
+    width: 8.5vh;
+    position: relative;
+    left: 32vw;
+    bottom: 8px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
