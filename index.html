@@ -7,37 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb699e6aa0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    
     <div class="first-page">
-        <div class="navbar"></div>
-        <div class="container"></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="https://www.hackerrank.com/ksneha0498?hr_r=1">HackerRank</a></li>
+                <li>|</li>
+                <li><a href="https://leetcode.com/sneha_0427/">Leetcode</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/kumarisneha/">LinkedIn</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/snehaGit21">GitHub</a></li>
+                <li>
+                    <div class="filter-options-nav">
+                        <div class="filter-darkest"><div class="modal-filter darkest"></div></div>
+                        <div class="filter-darker"><div class="modal-filter darker"></div></div>
+                        <div class="filter-dark"><div class="modal-filter dark"></div></div>
+                        <div class="filter-light"><div class="modal-filter light"></div></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="tagline">
+                <h2>stay </h2>
+                <h1>upDated </h1>
+                <h2>with your</h2>
+            </div>
+            <ul class="main-options">
+                <li class="tasks">Tasks</li>
+                <li>|</li>
+                <li class="projects">Projects</li>
+            </ul>
+        </div>
     </div>
     <div class="second-page">
-        <div class="title-task"></div>
+        <div class="title-task">
+            <p>Task Manager</p>
+        </div>
         <div class="templates">
-            <div class="to-do"></div>
-            <div class="doing"></div>
-            <div class="done"></div>
-            <div class="goto-main-page"></div>
+            <div class="to-do">
+                <div class="to-do-title">
+                    <div>TO-DO</div>
+                    <i class="fas fa-plus-circle" id="add-btn"></i>
+                </div>
+                <div class="to-do-grid delete-ticket">
+                </div>
+            </div>
+            <div class="doing">
+                <div class="doing-title">
+                    <div>DOING</div>
+                    <i class="fas fa-plus-circle" id="add-btn"></i>
+                </div>
+                <div class="doing-grid delete-ticket"></div>
+            </div>
+            <div class="done">
+                <div class="done-title">
+                    <div>DONE</div>
+                    <i class="fas fa-plus-circle" id="add-btn"></i>
+                </div>
+                <div class="done-grid delete-ticket"></div>
+            </div>
+            <div class="goto-main-page"><i class="fas fa-arrow-up fa-2x" id="up-arrow"></i>
+            </div>
         </div>
     </div>
     <div class="third-page">
-        <div class="title-project"></div>
+        <div class="title-project">
+            <p>PROJECT MANAGER</p>
+        </div>
         <div class="third-page-container">
             <div class="left-grid">
-                <div class="doing"></div>
-                <div class="done"></div>
+                <div class="doing">
+                    <div class="doing-title">
+                        <div>DOING</div>
+                        <i class="fas fa-plus-circle" id="add-btn"></i>
+                    </div>
+                    <div class="doing-grid-project delete-ticket"></div>
+                </div>
+                <div class="done">
+                    <div class="done-title">
+                        <div>DONE</div>
+                        <i class="fas fa-plus-circle" id="add-btn"></i>
+                    </div>
+                    <div class="done-grid-project delete-ticket"></div>
+                </div>
             </div>
             <div class="right-grid">
-                <div class="pitch-ideas"></div>
-                <div class="resources"></div>
-                <div class="goto-main-page"></div>
+                <div class="pitch-ideas">
+                    <div class="ideas-title">
+                        <div>PITCH IDEAS</div>
+                        <i class="fas fa-plus-circle" id="pitch-ideas"></i>
+                    </div>
+                    <div class="ideas-grid delete-ideas"></div>
+                </div>
+                <div class="resources">
+                    <div class="resources-title">
+                        <div>RESOURCES</div>
+                        <i class="fas fa-plus-circle" id="pitch-ideas"></i>
+                    </div>
+                    <div class="resources-grid delete-ideas"></div>
+                </div>
+                <div class="goto-main-page"><i class="fas fa-arrow-up fa-2x" id="up-arrow"></i></div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
